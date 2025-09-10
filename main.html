@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizia Travel - Destinos dos Sonhos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .price-tag {
+            background: linear-gradient(45deg, #1e3a8a, #3b82f6);
+        }
+    </style>
+</head>
+<body class="bg-sky-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">B</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-blue-900">Bizia Travel</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-blue-900 hover:text-blue-600 font-medium">Início</a>
+                    <a href="#destinos" class="text-blue-900 hover:text-blue-600 font-medium">Destinos</a>
+                    <a href="#pacotes" class="text-blue-900 hover:text-blue-600 font-medium">Pacotes</a>
+                    <a href="#contato" class="text-blue-900 hover:text-blue-600 font-medium">Contato</a>
+                </nav>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+                    Reserve Agora
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-6">✈️ Descubra o Mundo Conosco!</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Transforme seus sonhos em realidade com nossos pacotes exclusivos para os destinos mais paradisíacos do planeta</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                    🌟 Ver Promoções
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-blue-600 transition">
+                    📞 Falar com Consultor
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinos Section -->
+    <section id="destinos" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-blue-900 mb-4">🏝️ Destinos Exclusivos</h3>
+                <p class="text-gray-600 text-lg">Lugares únicos que vão marcar sua vida para sempre</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Ibiza -->
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-blue-900 mb-2">🎉 Ibiza, Espanha</h4>
+                        <p class="text-gray-600 mb-4">Vida noturna incrível, praias paradisíacas e energia única</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">A partir de R$ 3.200</span>
+                            <span class="bg-red-500 text-white px-2 py-1 rounded text-sm">-30%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grécia -->
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14,6V4H10V6H9V4H8V6H7V4H6V6H5V8H6V10H5V12H6V14H5V16H6V18H7V16H8V18H9V16H10V18H11V16H12V18H13V16H14V18H15V16H16V18H17V16H18V14H17V12H18V10H17V8H18V6H17V4H16V6H15V4H14V6M7,8H17V14H7V8Z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-blue-900 mb-2">🏛️ Grécia</h4>
+                        <p class="text-gray-600 mb-4">História milenar, ilhas deslumbrantes e cultura fascinante</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">A partir de R$ 4.500</span>
+                            <span class="bg-green-500 text-white px-2 py-1 rounded text-sm">Novo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ilha do Mel -->
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-emerald-400 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-blue-900 mb-2">🍯 Ilha do Mel, Brasil</h4>
+                        <p class="text-gray-600 mb-4">Paraíso nacional, natureza preservada e tranquilidade</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">A partir de R$ 800</span>
+                            <span class="bg-yellow-500 text-white px-2 py-1 rounded text-sm">Popular</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bahamas -->
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2L13.09,8.26L22,9L13.09,9.74L12,16L10.91,9.74L2,9L10.91,8.26L12,2M6.5,12.5L7.5,16.5L11.5,17.5L7.5,18.5L6.5,22.5L5.5,18.5L1.5,17.5L5.5,16.5L6.5,12.5M17.5,12.5L18.5,16.5L22.5,17.5L18.5,18.5L17.5,22.5L16.5,18.5L12.5,17.5L16.5,16.5L17.5,12.5Z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-blue-900 mb-2">🏖️ Bahamas</h4>
+                        <p class="text-gray-600 mb-4">Águas cristalinas, resorts de luxo e experiências únicas</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">A partir de R$ 5.800</span>
+                            <span class="bg-purple-500 text-white px-2 py-1 rounded text-sm">Luxo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pacotes Promocionais -->
+    <section id="pacotes" class="py-16 bg-sky-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-blue-900 mb-4">🎁 Pacotes Promocionais</h3>
+                <p class="text-gray-600 text-lg">Ofertas imperdíveis por tempo limitado!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Pacote Econômico -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+                    <div class="price-tag text-white p-6 text-center">
+                        <h4 class="text-2xl font-bold mb-2">✈️ CLASSE ECONÔMICA</h4>
+                        <p class="text-blue-100">Conforto e economia para sua viagem</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center space-x-3">
+                                <span class="text-green-500">✓</span>
+                                <span>Passagem aérea ida e volta</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-green-500">✓</span>
+                                <span>Hospedagem 3-4 estrelas</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-green-500">✓</span>
+                                <span>Café da manhã incluído</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-green-500">✓</span>
+                                <span>Seguro viagem</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-green-500">✓</span>
+                                <span>Suporte 24h</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border-t pt-6">
+                            <div class="text-center mb-4">
+                                <span class="text-3xl font-bold text-blue-600">A partir de R$ 2.499</span>
+                                <span class="block text-gray-500 line-through">R$ 3.200</span>
+                            </div>
+                            <button class="w-full bg-blue-600 text-white py-3 rounded-full font-bold hover:bg-blue-700 transition">
+                                🚀 Reservar Agora
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pacote Primeira Classe -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover border-4 border-yellow-400">
+                    <div class="bg-gradient-to-r from-yellow-400 to-orange-400 text-white p-6 text-center relative">
+                        <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                            MAIS VENDIDO
+                        </div>
+                        <h4 class="text-2xl font-bold mb-2">👑 PRIMEIRA CLASSE</h4>
+                        <p class="text-yellow-100">Luxo e exclusividade em cada detalhe</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center space-x-3">
+                                <span class="text-green-500">✓</span>
+                                <span>Passagem aérea primeira classe</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-green-500">✓</span>
+                                <span>Resort 5 estrelas all-inclusive</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-green-500">✓</span>
+                                <span>Transfer privativo</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-green-500">✓</span>
+                                <span>Passeios exclusivos</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-green-500">✓</span>
+                                <span>Concierge personalizado</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-green-500">✓</span>
+                                <span>Spa e tratamentos inclusos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border-t pt-6">
+                            <div class="text-center mb-4">
+                                <span class="text-3xl font-bold text-orange-600">A partir de R$ 8.999</span>
+                                <span class="block text-gray-500 line-through">R$ 12.500</span>
+                            </div>
+                            <button class="w-full bg-gradient-to-r from-yellow-400 to-orange-400 text-white py-3 rounded-full font-bold hover:from-yellow-500 hover:to-orange-500 transition">
+                                ✨ Reservar Experiência VIP
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-12">
+                <div class="bg-blue-600 text-white rounded-2xl p-8 max-w-4xl mx-auto">
+                    <h4 class="text-3xl font-bold mb-4">🔥 Oferta Relâmpago!</h4>
+                    <p class="text-xl mb-6">Reserve hoje e ganhe 20% de desconto + parcelamento em até 12x sem juros!</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                            💬 Falar no WhatsApp
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-blue-600 transition">
+                            📧 Receber Proposta
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold mb-4">📞 Entre em Contato</h3>
+                <p class="text-blue-200 text-lg">Estamos prontos para realizar seus sonhos de viagem!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Informações de Contato -->
+                <div class="space-y-8">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                            <span class="text-xl">📧</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold">Email</h4>
+                            <p class="text-blue-200">biziatravel@hotmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                            <span class="text-xl">📱</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold">WhatsApp</h4>
+                            <p class="text-blue-200">(41) 99863-8220</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                            <span class="text-xl">⏰</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold">Horário de Atendimento</h4>
+                            <p class="text-blue-200">Segunda a Sexta: 8h às 18h</p>
+                            <p class="text-blue-200">Sábado: 9h às 14h</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-800 p-6 rounded-xl">
+                        <h4 class="text-xl font-bold mb-3">🎯 Por que escolher a Bizia Travel?</h4>
+                        <ul class="space-y-2 text-blue-200">
+                            <li>✓ Mais de 10 anos de experiência</li>
+                            <li>✓ Atendimento personalizado</li>
+                            <li>✓ Melhores preços garantidos</li>
+                            <li>✓ Suporte 24h durante a viagem</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Formulário de Contato -->
+                <div class="bg-white text-gray-800 p-8 rounded-2xl">
+                    <h4 class="text-2xl font-bold text-blue-900 mb-6">💌 Solicite sua Proposta</h4>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Nome Completo</label>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Seu nome completo">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="seu@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">WhatsApp</label>
+                            <input type="tel" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="(00) 00000-0000">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Destino de Interesse</label>
+                            <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option>Selecione um destino</option>
+                                <option>Ibiza, Espanha</option>
+                                <option>Grécia</option>
+                                <option>Ilha do Mel, Brasil</option>
+                                <option>Bahamas</option>
+                                <option>Outro destino</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Mensagem</label>
+                            <textarea rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Conte-nos sobre sua viagem dos sonhos..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                            🚀 Enviar Solicitação
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold">B</span>
+                </div>
+                <span class="text-xl font-bold">Bizia Travel</span>
+            </div>
+            <p class="text-blue-200 mb-4">Transformando sonhos em viagens inesquecíveis desde 2014</p>
+            <p class="text-blue-300 text-sm">© 2024 Bizia Travel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling para links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Funcionalidade dos botões
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                const text = this.textContent.trim();
+                
+                if (text.includes('WhatsApp') || text.includes('Falar')) {
+                    window.open('https://wa.me/5541998638220?text=Olá! Gostaria de saber mais sobre os pacotes de viagem da Bizia Travel.', '_blank');
+                } else if (text.includes('Reserve') || text.includes('Reservar')) {
+                    alert('🎉 Redirecionando para WhatsApp para finalizar sua reserva!');
+                    setTimeout(() => {
+                        window.open('https://wa.me/5541998638220?text=Olá! Quero reservar um pacote de viagem. Podem me ajudar?', '_blank');
+                    }, 1000);
+                } else if (text.includes('Proposta') || text.includes('Email')) {
+                    window.location.href = 'mailto:biziatravel@hotmail.com?subject=Solicitação de Proposta de Viagem&body=Olá! Gostaria de receber uma proposta personalizada para minha viagem.';
+                }
+            });
+        });
+
+        // Funcionalidade do formulário
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Solicitação enviada com sucesso! Entraremos em contato em breve.');
+            this.reset();
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97cf98f66714544a',t:'MTc1NzUxNDM1Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
